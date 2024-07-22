@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Header } from "../components/header";
-import { Footer } from "../components/footer/footer";
+import { Footer } from "../components/footer";
 
 export const Home = () => {
   const settings = {

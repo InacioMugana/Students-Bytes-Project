@@ -9,7 +9,7 @@ import {
 import { Header } from "../components/header";
 import { Users as initialUsers } from "../data/users";
 import { useState } from "react";
-import { Footer } from "../components/footer/footer";
+import { Footer } from "../components/footer";
 export const Students = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const searchTerm = searchParams.get("search") || "";
@@ -88,7 +88,7 @@ export const Students = () => {
                 <p className="font-medium text-xl">{user.linkLabel}</p>{" "}
                 <div className="flex gap-4">
                   {" "}
-                  <Link to={`/user-details/${user.linkUrl}`}>
+                  <Link to={`/student-details/${user.id}`}>
                     <Info size={24} />{" "}
                   </Link>{" "}
                   <Trash

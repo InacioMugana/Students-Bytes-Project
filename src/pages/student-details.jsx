@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
+import { Users } from "../data/users";
+import { UsersDetailsPerfil } from "../components/students/usersDetailsPerfil";
 
 export const StudentsDetails = () => {
   const params = useParams();
@@ -11,12 +13,15 @@ export const StudentsDetails = () => {
       <main>
         {foundUsers ? (
           <UsersDetailsPerfil
-            name={foundUsers.name}
-            bairro={foundUsers.bairro}
+            name={foundUsers.linkUrl}
+            email={foundUsers.linkLabel}
+            numero={foundUsers.numero}
           />
         ) : (
-          "Produto não encontrado"
+          "Nome não encontrado"
         )}
+
+        {/* <UsersDetailsPerfil name={"Inacio"} bairro={"MAJHDBSE"} /> */}
       </main>
       <Footer />
     </>

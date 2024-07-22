@@ -1,7 +1,12 @@
 export const Users = [
-  { linkUrl: "inacio-mugana", linkLabel: "Inácio Mugana" },
-  { linkUrl: "yuran-nhassengo", linkLabel: "Yuran Nhassengo" },
-  { linkUrl: "georgina-cumbe", linkLabel: "Georgina Manguana" },
+  {
+    id: 1,
+    linkUrl: "inacio-mugana",
+    linkLabel: "Inácio Mugana",
+    numero: 840000001,
+  },
+  { id: 2, linkUrl: "yuran-nhassengo", linkLabel: "Yuran Nhassengo" },
+  { id: 3, linkUrl: "georgina-cumbe", linkLabel: "Georgina Manguana" },
   { linkUrl: "isabel-duarte", linkLabel: "Isabel Duarte" },
   { linkUrl: "joaquim-ubisse", linkLabel: "Joaquim Ubisse" },
   { linkUrl: "luis-sibia", linkLabel: "Luís Sibia" },
