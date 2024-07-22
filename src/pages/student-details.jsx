@@ -18,10 +18,8 @@ export const StudentsDetails = () => {
             numero={foundUsers.numero}
           />
         ) : (
-          "Nome não encontrado"
+          "Details not found"
         )}
-
-        {/* <UsersDetailsPerfil name={"Inacio"} bairro={"MAJHDBSE"} /> */}
       </main>
       <Footer />
     </>

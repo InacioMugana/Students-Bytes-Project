@@ -61,9 +61,9 @@ export const Students = () => {
           <div className="flex items-center  bg-slate-600 rounded-full p-3 w-96 shadow shadow-white mt-3 ml-3">
             {" "}
             <input
-              type="seach"
-              placeholder="seach..."
-              className="outline-none w-full pl-7 text-gray-800 bg-transparent h-10 rounded-l-full focus:ring-2 focus:ring-slate-500 focus:border-transparent"
+              type="search"
+              placeholder="Search..."
+              className="outline-none w-full pl-7 text-black bg-white h-10 rounded-full focus:ring-2 focus:ring-slate-500 focus:border-transparent"
               value={searchTerm}
               onChange={handleSearchChange}
             />{" "}
@@ -71,7 +71,7 @@ export const Students = () => {
           </div>{" "}
           <PlusCircle
             size={32}
-            className="mt-6 ml-4 cursor-pointer"
+            className="mt-6 ml-4 cursor-pointer w-12 h-12 rounded-full bg-slate-600 text-white flex items-center justify-center"
             onClick={toggleFormVisibility}
           />{" "}
         </div>{" "}
@@ -82,22 +82,23 @@ export const Students = () => {
             {filteredUsers.map((user, index) => (
               <div
                 key={index}
-                className="flex bg-slate-600 rounded-md shadow shadow-slate-500 p-10 items-center w-full justify-between mt-7"
+                className="flex bg-slate-600 rounded-full shadow shadow-slate-500 p-10 items-center w-full justify-between mt-7 hover:bg-slate-700 hover:shadow-lg transition duration-300"
               >
-                {" "}
-                <p className="font-medium text-xl">{user.linkLabel}</p>{" "}
+                <p className="font-medium text-xl">{user.linkLabel}</p>
                 <div className="flex gap-4">
-                  {" "}
-                  <Link to={`/student-details/${user.id}`}>
-                    <Info size={24} />{" "}
-                  </Link>{" "}
+                  <Link
+                    to={`/student-details/${user.id}`}
+                    className="hover:text-blue-500"
+                  >
+                    <Info size={24} />
+                  </Link>
                   <Trash
                     size={24}
                     className="cursor-pointer"
                     style={{ color: "red" }}
                     onClick={() => handleDeleteUser(user.linkUrl)}
-                  />{" "}
-                </div>{" "}
+                  />
+                </div>
               </div>
             ))}{" "}
           </div>{" "}
@@ -113,7 +114,7 @@ export const Students = () => {
                     <div className="m-4">
                       {" "}
                       <label htmlFor="name" className="block">
-                        Nome{" "}
+                        Name{" "}
                       </label>{" "}
                       <input
                         type="text"
@@ -139,7 +140,7 @@ export const Students = () => {
                     <div className="m-4">
                       {" "}
                       <label htmlFor="mensagem" className="block">
-                        Biografia{" "}
+                        Subject{" "}
                       </label>{" "}
                       <textarea
                         id="mensagem"
@@ -149,7 +150,7 @@ export const Students = () => {
                       ></textarea>{" "}
                     </div>{" "}
                     <button className="bg-white text-black  border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition-colors duration-300 ml-5">
-                      Enviar {" "}
+                      Send {" "}
                     </button>{" "}
                   </form>{" "}
                 </div>{" "}
@@ -168,15 +169,15 @@ export const Students = () => {
                 className="absolute top-4 right-4 cursor-pointer"
                 onClick={handleBoxClose}
               />{" "}
-              <h2 className="text-xl font-bold mb-4">Dados do Estudante</h2>{" "}
+              <h2 className="text-xl font-bold mb-4">Student data</h2>{" "}
               <p className="mt-2">
-                <strong>Nome:</strong> {formData.name}{" "}
+                <strong>Name:</strong> {formData.name}{" "}
               </p>{" "}
               <p className="mt-2">
                 <strong>Email:</strong> {formData.email}{" "}
               </p>{" "}
               <p className="mt-2">
-                <strong>Biografia:</strong> {formData.mensagem}{" "}
+                <strong>Subject:</strong> {formData.mensagem}{" "}
               </p>{" "}
             </div>{" "}
           </div>

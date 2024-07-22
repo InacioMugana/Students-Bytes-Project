@@ -20,20 +20,50 @@ export const Home = () => {
     <div className="flex flex-col justify-between ">
       <Header />
 
-      <Slider {...settings}>
-        <div>
-          <img src="/image1.jpg" alt="image1" />
-        </div>
-        <div>
-          <img src="/image2.jpg" alt="image 2" />
-        </div>
-        <div>
-          <img src="/image3.jpg" alt="image 3" />
-        </div>
-        <div>
-          <img src="/image4.jpg" alt="image 4" />
-        </div>
-      </Slider>
+      <div className="relative">
+        <Slider {...settings}>
+          <div>
+            <div className="relative">
+              <img src="/image1.jpg" alt="image1" />
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                <h1 className="text-slate-600 text-5xl font-bold bg-white">
+                  Students Management
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="relative">
+              <img src="/image2.jpg" alt="image 2" />
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                <h1 className="text-slate-600 text-5xl font-bold bg-white">
+                  Intensive learning
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="relative">
+              <img src="/image3.jpg" alt="image 3" />
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                <h1 className="text-slate-600 text-5xl font-bold bg-white">
+                  Educational strategies
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="relative">
+              <img src="/image4.jpg" alt="image 4" />
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                <h1 className="text-slate-600 text-5xl font-bold bg-white">
+                  Effective methods of academic
+                </h1>
+              </div>
+            </div>
+          </div>
+        </Slider>
+      </div>
 
       <Footer />
     </div>
