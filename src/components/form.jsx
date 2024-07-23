@@ -38,10 +38,10 @@ export const Form = () => {
       <div className="flex justify-center items-center border rounded-2xl border-white z-10 bg-purple-bytes p-4 mt-10 mb-10">
         {/* Informações de contato à esquerda */}
         <div className="flex flex-col flex-1 pr-4">
-          <p className="text-white mb-5">Adress: Eduardo Mondlane </p>
+          <p className="text-white mb-5">Address: Eduardo Mondlane </p>
           <p className="text-white mb-5">Neighborhood: Central</p>
-          <p className="text-white mb-5">Cell: 84 00 00 000</p>
-          <p className="text-white mb-5">Email: bytesSudents@gmail.com</p>
+          <p className="text-white mb-5">Cell: 84 00 00 111</p>
+          <p className="text-white mb-5">Email: bytesStudents@gmail.com</p>
         </div>
 
         {/* Formulário à direita */}

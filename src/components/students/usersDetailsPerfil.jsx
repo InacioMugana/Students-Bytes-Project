@@ -4,15 +4,15 @@ export const UsersDetailsPerfil = ({ name, email, numero }) => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <h1 className="text-2xl mb-4">Detalhes do Usuário</h1>
+        <h1 className="text-2xl mb-4">User Details</h1>
         <p className="mb-2">
-          <strong>Nome:</strong> {name}
+          <strong>Name:</strong> {name}
         </p>
         <p className="mb-2">
           <strong>Email:</strong> {email}
         </p>
         <p>
-          <strong>Número:</strong> {numero}
+          <strong>Number:</strong> {numero}
         </p>
         <div className="flex justify-center items-center">
           <Link to="/students">

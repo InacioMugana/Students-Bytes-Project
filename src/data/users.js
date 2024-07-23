@@ -2,7 +2,7 @@ export const Users = [
   {
     id: 1,
     linkUrl: "inacio-mugana",
-    linkLabel: "Inácio Mugana",
+    linkLabel: "Inácio Mariano Mugana",
     nomeCompleto: "Inácio Mugana",
     email: "inacio@example.com",
     numero: 840000001,
@@ -10,7 +10,7 @@ export const Users = [
   {
     id: 2,
     linkUrl: "yuran-nhassengo",
-    linkLabel: "Yuran Nhassengo",
+    linkLabel: "Yuran Oscar Nhassengo",
     nomeCompleto: "Yuran Nhassengo",
     email: "yuran@example.com",
     numero: 840000002,
@@ -18,7 +18,7 @@ export const Users = [
   {
     id: 3,
     linkUrl: "georgina-cumbe",
-    linkLabel: "Georgina Manguana",
+    linkLabel: "Georgina David Manguana",
     nomeCompleto: "Georgina Manguana",
     email: "georgina@example.com",
     numero: 840000003,
@@ -34,7 +34,7 @@ export const Users = [
   {
     id: 5,
     linkUrl: "luis-sibia",
-    linkLabel: "Luís Sibia",
+    linkLabel: "Luís Mateus Junior Sibia",
     nomeCompleto: "Luís Sibia",
     email: "luis@example.com",
     numero: 840000005,
@@ -50,7 +50,7 @@ export const Users = [
   {
     id: 7,
     linkUrl: "pedro-chimuze",
-    linkLabel: "Pedro Chimuze",
+    linkLabel: "Pedro Beijamim Chimuze",
     nomeCompleto: "Pedro Chimuze",
     email: "pedro@example.com",
     numero: 840000007,
@@ -58,7 +58,7 @@ export const Users = [
   {
     id: 8,
     linkUrl: "gerson-chuquela",
-    linkLabel: "Gerson Chuquela",
+    linkLabel: "Gerson Jubelito Chuquela",
     nomeCompleto: "Gerson Chuquela",
     email: "gerson@example.com",
     numero: 840000008,
@@ -66,7 +66,7 @@ export const Users = [
   {
     id: 9,
     linkUrl: "alcinda-chirrime",
-    linkLabel: "Alcinda Chirrime",
+    linkLabel: "Alcinda Andre Chirrime",
     nomeCompleto: "Alcinda Chirrime",
     email: "alcinda@example.com",
     numero: 840000009,
@@ -90,7 +90,7 @@ export const Users = [
   {
     id: 12,
     linkUrl: "atalia-patissone",
-    linkLabel: "Atália Patissone",
+    linkLabel: "Atália Da Costa Patissone",
     nomeCompleto: "Atália Patissone",
     email: "atalia@example.com",
     numero: 840000012,
@@ -106,7 +106,7 @@ export const Users = [
   {
     id: 14,
     linkUrl: "franco-bomba",
-    linkLabel: "Franco Bomba",
+    linkLabel: "Franco Neto Bomba Junior",
     nomeCompleto: "Franco Bomba",
     email: "franco@example.com",
     numero: 840000014,
@@ -146,7 +146,7 @@ export const Users = [
   {
     id: 19,
     linkUrl: "simao-abel",
-    linkLabel: "Simão Cuco",
+    linkLabel: "Simão Abel Cuco",
     nomeCompleto: "Simão Cuco",
     email: "simao@example.com",
     numero: 840000019,
@@ -166,5 +166,13 @@ export const Users = [
     nomeCompleto: "Vicente Sambo",
     email: "vicente@example.com",
     numero: 840000021,
+  },
+  {
+    id: 22,
+    linkUrl: "isabel-duarte",
+    linkLabel: "Isabel Jessica Benedito Duarte",
+    nomeCompleto: "Isabel Jessica Benedito Duarte",
+    email: "isabel@example.com",
+    numero: 840000022,
   },
 ];

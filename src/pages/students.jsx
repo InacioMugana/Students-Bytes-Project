@@ -82,7 +82,7 @@ export const Students = () => {
             {filteredUsers.map((user, index) => (
               <div
                 key={index}
-                className="flex bg-slate-600 rounded-full shadow shadow-slate-500 p-10 items-center w-full justify-between mt-7 hover:bg-slate-700 hover:shadow-lg transition duration-300"
+                className="flex bg-slate-600 rounded-full shadow shadow-slate-500 p-10 items-center w-full justify-between mt-7 hover:bg-slate-700 hover:shadow-lg transition duration-300 text-white"
               >
                 <p className="font-medium text-xl">{user.linkLabel}</p>
                 <div className="flex gap-4">

@@ -9,7 +9,7 @@ export const ErrorPage = () => {
         <div className="flex justify-center items-center  flex-col mt-36">
           <div className=" border-b-black flex justify-center flex-col">
             <strong className="text-8xl text-orange ">OOPS</strong>
-            <p className="text-center text-2xl mt-12">Name Not Found</p>
+            <p className="text-center text-2xl mt-12">Page Not Found</p>
 
             <div className="flex justify-center items-center">
               <Link to="/">
